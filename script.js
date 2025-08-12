@@ -33,6 +33,31 @@ let status5 = "";
 
 let res_num = 0;
 
+function pickwin() {
+    if (selectedNumber1 !== null && selectedNumber2 !== null && selectedNumber3 !== null && selectedNumber4 !== null && selectedNumber5 !== null) {
+    let num1 = Math.abs(selectedNumber1 - res_num);
+    let num2 = Math.abs(selectedNumber2 - res_num);
+    let num3 = Math.abs(selectedNumber3 - res_num);
+    let num4 = Math.abs(selectedNumber4 - res_num);
+    let num5 = Math.abs(selectedNumber5 - res_num);
+    
+    let comp = Math.min(num1, num2, num3, num4, num5);
+    
+    if (comp == num1) {
+        winner.textContent = "PLAYER 1";
+  } else if (comp == num2) {
+        winner.textContent = "PLAYER 2";
+  } else if (comp == num3) {
+        winner.textContent = "PLAYER 3";
+  } else if (comp == num4) {
+        winner.textContent = "PLAYER 4";
+  } else if (comp == num5) {
+        winner.textContent = "PLAYER 5";
+  }
+}
+}
+
+
 // for loop, to loop from 0 to 100 and print out the number on the button
 //  PLAYER 1
 for (let i = 0; i <= 100; i++) {
@@ -50,6 +75,7 @@ for (let i = 0; i <= 100; i++) {
     avg.textContent = a.toFixed(2); // optional: limit decimals
     pointnum.textContent = (a * 0.8).toFixed(2);
     res_num = (a * 0.8).toFixed(2);
+    pickwin();
   }
   });
     numberpad1.appendChild(btn1);
@@ -73,6 +99,7 @@ for (let i = 0; i <= 100; i++) {
     avg.textContent = a.toFixed(2); // optional: limit decimals
     pointnum.textContent = (a * 0.8).toFixed(2);
     res_num = (a * 0.8).toFixed(2);
+    pickwin();
   }
   });
     numberpad2.appendChild(btn2);
@@ -96,6 +123,7 @@ for (let i = 0; i <= 100; i++) {
     avg.textContent = a.toFixed(2); // optional: limit decimals
     pointnum.textContent = (a * 0.8).toFixed(2);
     res_num = (a * 0.8).toFixed(2);
+    pickwin();
   }
   });
     numberpad3.appendChild(btn3);
@@ -120,6 +148,7 @@ for (let i = 0; i <= 100; i++) {
     avg.textContent = a.toFixed(2); // optional: limit decimals
     pointnum.textContent = (a * 0.8).toFixed(2);
     res_num = (a * 0.8).toFixed(2);
+    pickwin();
   }
   });
     numberpad4.appendChild(btn4);
@@ -142,38 +171,8 @@ for (let i = 0; i <= 100; i++) {
     avg.textContent = a.toFixed(2); // optional: limit decimals
     pointnum.textContent = (a * 0.8).toFixed(2);
     res_num = (a * 0.8).toFixed(2);
+    pickwin();
   }
   });
     numberpad5.appendChild(btn5);
 }
-
-
-
-
-//code for finding out the winner. the id is: winner
-//res_num is variable for the comparative value
-//use selectednumber variables
-let num1 = Math.abs(selectedNumber1 - res_num)
-let num2 = Math.abs(selectedNumber2 - res_num)
-let num3 = Math.abs(selectedNumber3 - res_num)
-let num4 = Math.abs(selectedNumber4 - res_num)
-let num5 = Math.abs(selectedNumber5 - res_num)
-
-comp = Math.min(num1, num2, num3, num4, num5);
-
-if (comp == num1) {
-    winner.textContent = "PLAYER 1";
-}
-else if (comp == num2) {
-    winner.textContent = "PLAYER 2";
-}
-else if (comp == num3) {
-    winner.textContent = "PLAYER 3";
-}
-else if (comp == num4) {
-    winner.textContent = "PLAYER 4";
-}
-else if (comp == num5) {
-    winner.textContent = "PLAYER 5";
-}
- 
