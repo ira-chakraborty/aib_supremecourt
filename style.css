@@ -1,0 +1,38 @@
+#rules {
+  padding-left: 1.5em;
+  white-space: pre-line; /* keeps your line breaks */
+}
+
+#line1 {
+    text-align: center;
+}
+
+#numberpad1 {
+  display: grid; /* makes a grid layout */
+  grid-template-columns: repeat(10, 1fr); /* 10 buttons per row */
+  max-width: 400px;
+}
+
+#numberpad2 {
+  display: grid; /* makes a grid layout */
+  grid-template-columns: repeat(10, 1fr); /* 10 buttons per row */
+  max-width: 400px;
+}
+
+#numberpad3 {
+  display: grid; /* makes a grid layout */
+  grid-template-columns: repeat(10, 1fr); /* 10 buttons per row */
+  max-width: 400px;
+}
+
+#numberpad4 {
+  display: grid; /* makes a grid layout */
+  grid-template-columns: repeat(10, 1fr); /* 10 buttons per row */
+  max-width: 400px;
+}
+
+#numberpad5 {
+  display: grid; /* makes a grid layout */
+  grid-template-columns: repeat(10, 1fr); /* 10 buttons per row */
+  max-width: 400px;
+}

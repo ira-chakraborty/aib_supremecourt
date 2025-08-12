@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Supreme Court: Beauty Contest</title>
+	<link rel="stylesheet" href="/style.css">
+	<script src="/script.js" defer>
+	</script>
+</head>
+
+<body> 
+    <header>
+        <h1>Supreme Court: Beauty Contest</h1>
+		<p id="sub">inspired by Alice in Borderland</p>
+    </header>
+
+
+
+<p id="rules"> Contestants choose a number between 0 and 100.
+The average of the numbers everyone selected is multiplied by 0.8.
+The person whose number is the closest to that result is the winner. The four remaining players each lose a point.         
+A new rule is introduced for every player eliminated.
+#1 player eliminated: If two or more players choose the same number, the number they choose becomes invalid, meaning they lose a point even if the number is closest to the average multiplied by 0.8.
+#2 players eliminated: Choosing the exact correct number will cause other players to lose two points instead of one.
+#3 players eliminated: If one player chooses 0, the other player can win by choosing 100.
+It is GAME CLEAR for the last remaining player.
+It is GAME OVER for the player who reaches -10 points. Their scale above their head will overflow and pour aqua regia (an acid strong enough to dissolve gold) on them.</p>
+
+<p id="line1"> -------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+
+<h1 id="Player1"> PLAYER 1: Enter your number </h1>
+<div id="numberpad1"> 
+</div>
+<h2 id="pickednumber1">You picked: <span id="pickedvalue1">None</span> </h2>
+
+
+<h1 id="Player2"> PLAYER 2: Enter your number </h1>
+<div id="numberpad2"> 
+</div>
+<h2 id="pickednumber2">You picked: <span id="pickedvalue2">None</span> </h2>
+
+
+<h1 id="Player3"> PLAYER 3: Enter your number </h1>
+<div id="numberpad3"> 
+</div>
+<h2 id="pickednumber3">You picked: <span id="pickedvalue3">None</span> </h2>
+
+
+
+<h1 id="Player4"> PLAYER 4: Enter your number </h1>
+<div id="numberpad4"> 
+</div>
+<h2 id="pickednumber4">You picked: <span id="pickedvalue4">None</span> </h2>
+
+
+<h1 id="Player5"> PLAYER 5: Enter your number </h1>
+<div id="numberpad5"> 
+</div>
+<h2 id="pickednumber5">You picked: <span id="pickedvalue5">None</span> </h2>
+
+<p id="line1"> -------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
+
+<div> <h2 id="findavg"> The average of the numbers chosen in this round is: <span id="avg">None</span> </h2>
+<h2 id="mult0.8"> After multiplying this value by 0.8... <span id="pointnum">None</span> </h2>
+
+<h1 id="roundwin"> The winner of this round is: <span id="winner"> (you'll find out soon) </span> </h1>  
+</div>
+
+</body>
+
+</html>
+

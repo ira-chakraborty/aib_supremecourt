@@ -1,0 +1,9 @@
+#Contestants choose a number between 0 and 100;
+The average of the numbers everyone selected is multiplied by 0.8;
+The person whose number is the closest to that result is the winner. The four remaining players each lose a point.
+A new rule is introduced for every player eliminated. On the first round and all following rounds where a new rule is introduced, players are allotted 5 minutes as a way to get used to the rules.
+#1 player eliminated: If two or more players choose the same number, the number they choose becomes invalid, meaning they lose a point even if the number is closest to the average multiplied by 0.8.
+#2 players eliminated: Choosing the exact correct number will cause other players to lose two points instead of one.
+#3 players eliminated: If one player chooses 0, the other player can win by choosing 100.
+It is GAME CLEAR for the last remaining player.
+It is GAME OVER for the player who reaches -10 points. Their scale above their head will overflow and pour aqua regia (an acid strong enough to dissolve gold) on them.
